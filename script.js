@@ -1,13 +1,12 @@
 //your JS code here. If required.
 
-let div = document.querySelectorAll("grid-item")
 
 
 let inputbox = document.querySelector("#block_id");
 let colorbox = document.querySelector("#colour_id")
 
 let btn = document.querySelector("#change_button")
-let resetbtn = document.querySelector("#Reset")
+let resetbtn = document.querySelector("#reset_button")
 
 
 function resetColor(){
@@ -28,8 +27,8 @@ if(block){
 btn.addEventListener("click",(e)=>{
     e.preventDefault()
 
-    let input= inputbox.value;
-    let color = colorbox.value;
+    let input= inputbox.value.trim();
+    let color = colorbox.value.trim();
 
 
    resetColor()
